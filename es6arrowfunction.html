@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>Arrow Function or Lambda Function</h1>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>
+		<script>
+			hello1 = function() {
+				return "With Normal Function!";
+			}
+			hello2 = () => {
+				return "With Arrow Function!";
+			}
+			hello3 = () =>"With Arrow Function!"
+			hello4 = (val) => "Hello " + val;
+			document.getElementById("demo1").innerHTML = hello1();
+			document.getElementById("demo2").innerHTML = hello2();
+			document.getElementById("demo3").innerHTML = hello3();
+			document.getElementById("demo4").innerHTML = hello4("Arrow!");
+		</script>
+	</body>
+</html>
